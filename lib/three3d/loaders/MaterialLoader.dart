@@ -198,7 +198,7 @@ class MaterialLoader extends Loader {
 
           case 'm4':
             material.uniforms[name].value =
-                new Matrix4().fromArray(uniform.value);
+                new MAT4_MATH.Matrix4().fromArray(uniform.value);
             break;
 
           default:

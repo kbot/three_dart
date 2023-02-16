@@ -11,12 +11,14 @@ import 'package:flutter_gl/flutter_gl.dart';
 import 'package:image/image.dart' hide Color;
 import 'package:three_dart/three3d/utils.dart';
 
-import 'package:three_dart/three_dart.dart';
+import 'package:three_dart/three_dart.dart' hide Matrix4;
 
 import 'package:universal_html/parsing.dart';
 import 'ImageLoaderForApp.dart' if (dart.library.js) 'ImageLoaderForWeb.dart';
 
 import 'package:http/http.dart' as http;
+
+import 'package:three_dart/three_dart.dart' as MAT4_MATH;
 
 part './LoadingManager.dart';
 part './Loader.dart';
