@@ -44,7 +44,7 @@ class TextureLoader extends Loader {
             width: image.width!,
             height: image.height!);
       } else {
-        var _pixels = image.getBytes(format: Format.rgba);
+        var _pixels = image.getBytes(format: Format.uint8);
 
         print(" _pixels : ${_pixels.length} ");
         print(" ------------------------------------------- ");
